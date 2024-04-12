@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 38 8.8% 97.6%;
+    --foreground: 38 57.2% 4.16%;
+
+    --muted: 38 47.4% 93.24%;
+    --muted-foreground: 38 57.2% 44.8%;
+
+    --popover: 38 47.4% 93.24%;
+    --popover-foreground: 38 57.2% 4.16%;
+
+    --card: 38 47.4% 93.24%;
+    --card-foreground: 38 57.2% 4.16%;
+
+    --border: 38 47.4% 93.24%;
+    --input: 38 47.4% 93.24%;
+
+    --primary: 38 88% 52%;
+    --primary-foreground: 38 57.2% 95.2%;
+
+    --secondary: 38 47.4% 93.24%;
+    --secondary-foreground: 38 57.2% 4.16%;
+
+    --accent: 38 47.4% 93.24%;
+    --accent-foreground: 38 57.2% 4.16%;
+
+    --destructive: 0 62.8% 69.4%;
+    --destructive-foreground: 38 57.2% 4.16%;
+
+    --ring: 38 88% 52%;
+    --border: 217.2 32.6% 82.5%;
+    --input: 217.2 32.6% 82.5%;
+  }
+
+  .dark {
+    --background: 38 57.2% 4.16%;
+    --foreground: 38 8.8% 97.6%;
+
+    --muted: 38 44% 15.600000000000001%;
+    --muted-foreground: 38 8.8% 55.2%;
+
+    --popover: 38 47.4% 6.76%;
+    --popover-foreground: 38 8.8% 97.6%;
+
+    --card: 38 47.4% 6.76%;
+    --card-foreground: 38 8.8% 97.6%;
+
+    --border: 38 44% 15.600000000000001%;
+    --input: 38 44% 15.600000000000001%;
+
+    --primary: 38 88% 52%;
+    --primary-foreground: 38 8.8% 5.2%;
+
+    --secondary: 38 44% 15.600000000000001%;
+    --secondary-foreground: 38 8.8% 97.6%;
+
+    --accent: 38 44% 15.600000000000001%;
+    --accent-foreground: 38 8.8% 97.6%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 38 8.8% 97.6%;
+
+    --ring: 38 88% 52%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+  }
+}
+
+
+.overflox-scroll {
+  overflow: hidden;
+  overflow-x: scroll
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
